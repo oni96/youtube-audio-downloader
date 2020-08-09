@@ -1,0 +1,16 @@
+.progressBarRow {
+  margin-top: 50px;
+}
+
+.progress {
+  height: 2rem !important;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+.downloadButton {
+  text-align: center;
+  margin-top: 10px;
+}
