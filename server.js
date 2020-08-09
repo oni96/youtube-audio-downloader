@@ -48,10 +48,10 @@ app.use(express.json()); // to support JSON-encoded bodies
 app.use(express.urlencoded({ extended: true })); // to support URL-encoded bodies
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname,"client", "build")));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "build","client", "index.html"));
 });
 
 app.post("/", (req, res) => {
